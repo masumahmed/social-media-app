@@ -1,7 +1,7 @@
 import './Home.css';
 import Header from '../../Components/Header/Header.js';
 
-function Home() {
+export default function Home() {
     return (
         <div>
             <Header />
@@ -9,5 +9,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;

@@ -1,7 +1,7 @@
 import './Profile.css'
 import Header from '../../Components/Header/Header.js';
 
-function Profile() {
+export default function Profile() {
     return (
         <div>
             <Header />
@@ -9,5 +9,3 @@ function Profile() {
         </div>
     );
 }
-
-export default Profile;
