@@ -6,3 +6,15 @@ This is a simple social media app intended to demonstrate proficiency in fullsta
 - Functional login page
 - Home Feed
 - Profile page
+
+# Requirments
+
+navigate to the project folder
+
+```bash
+$ npm install
+$ cd client
+$ npm install
+$ cd ..
+$ npm start # or npm dev, build, test, etc
+```
