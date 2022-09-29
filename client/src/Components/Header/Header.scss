@@ -1,4 +1,4 @@
-$color_1: #222;
+$color_1: #333;
 $color_2: #fff;
 $color_3: #fff;
 $color_4: #fff;
@@ -104,7 +104,6 @@ nav {
         opacity: 0;
         transition: .3s;
         pointer-events: none;
-        user-select: none;
     }
 
     &:hover {

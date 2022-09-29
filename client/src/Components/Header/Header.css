@@ -5,7 +5,7 @@
 nav {
   margin: 0;
   padding: 0;
-  background-color: #222;
+  background-color: #333;
 }
 nav ul {
   margin: 0;
@@ -31,7 +31,7 @@ nav ul li a {
 }
 nav ul li #logo {
   background: #d63f3f;
-  color: #222;
+  color: #333;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -88,10 +88,6 @@ nav ul li#space2 {
   opacity: 0;
   transition: 0.3s;
   pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 .tooltip:hover::after {
   opacity: 1;
