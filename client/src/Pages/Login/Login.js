@@ -5,7 +5,7 @@ export default function Login() {
     return <div class="content">
         <div class="flex-div">
             <div class="name-content">
-                <h1 class="logo">Social Media</h1>
+                <h1 class="logo">SocialMediaApp</h1>
                 <p>Connect with friends and the world around you on social media.</p>
             </div>
             <form>
