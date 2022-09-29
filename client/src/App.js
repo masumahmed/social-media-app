@@ -3,7 +3,7 @@ import Home from './Pages/Home/Home.js';
 import Login from './Pages/Login/Login.js';
 import Profile from './Pages/Profile/Profile.js';
 
-function App() {
+export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -12,5 +12,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App;
