@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const pool = require('./db.js');
+
 app.listen(3000);
 
 app.get('/', (req, res) => {
