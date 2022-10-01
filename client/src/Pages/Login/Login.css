@@ -58,6 +58,7 @@ form input {
   padding: 0.8rem 1rem;
   margin-bottom: 0.8rem;
   font-size: 1.1rem;
+  border-radius: 0.5rem;
 }
 form input:focus {
   border: 1.8px solid #1877f2;
