@@ -43,12 +43,18 @@ sans-serif;
     }
 }
 
+body {
+    background-image: url(../../../public/wave.svg);
+    background-repeat: no-repeat;
+    background-size: fit;
+}
+
 form {
     display: flex;
     flex-direction: column;
     background: $color_1;
     padding: 2rem;
-    width: 530px;
+    width: 430px;
     height: 400px;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
@@ -94,7 +100,7 @@ form {
 
     hr {
         background: #f7f7f7;
-        margin: 1rem;
+        margin: 1rem 0;
     }
 
     .create-account {
@@ -105,11 +111,9 @@ form {
         border-radius: 0.4rem;
         font-size: 1.1rem;
         color: $color_2;
-        width: 75%;
-        margin: 0 auto;
 
         &:hover {
-            filter: brightness(0.7);
+            filter: brightness(.7);
             cursor: pointer;
         }
     }

@@ -14,7 +14,8 @@ export default function Login() {
                 <input type="text" placeholder="Email or Phone Number" required />
                 <input type="password" placeholder="Password" required />
                 <button class="login">Log In</button>
-                <Link to="#">Forgot Password ?</Link>
+                <br></br>
+                <p class="">Forgot Password?</p>
                 <hr></hr>
                 <Link to='#' class="create-account">Create Account</Link>
             </ form>

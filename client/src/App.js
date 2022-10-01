@@ -17,8 +17,6 @@ export default function App() {
 function NotFound() {
 	return <center>
 		<h1 id='notFound'>Status 404 URL not found</h1>
-		<h1>
-			<i className="fa-solid fa-face-dizzy"></i>
-		</h1>
+		<h1><i className="fa-solid fa-face-dizzy"></i></h1>
 	</center>
 }
