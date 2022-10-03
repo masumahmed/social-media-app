@@ -46,7 +46,7 @@ sans-serif;
 .waveWrapper {
     width: inherit;
     height: 100vh;
-    background-image: url('../../../public/wave.svg') !important;
+    // background-image: url('../../../public/wave.svg') !important;
     background-repeat: no-repeat !important;
     background-size: fit !important;
 }
@@ -95,10 +95,8 @@ form {
 
     a {
         text-decoration: none;
-        text-align: center;
         font-size: 1rem;
-        padding-top: 0.8rem;
-        color: $color_1;
+        color: $color_2;
     }
 
     hr {
@@ -114,6 +112,7 @@ form {
         border-radius: 0.4rem;
         font-size: 1.1rem;
         color: $color_2;
+        text-align: center;
 
         &:hover {
             filter: brightness(.7);

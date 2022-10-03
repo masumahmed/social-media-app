@@ -1,0 +1,107 @@
+$color_1: #333;
+$color_2: #fff;
+$color_3: #fff;
+$color_4: #fff;
+$color_5: #d63f3f;
+$font-family_1: "Poppins",
+sans-serif;
+
+.posts {
+    background-color: $color_1;
+    margin: 1rem auto 0 auto;
+    padding: 0 0 0 0;
+    max-width: 50rem;
+    border-radius: 5px;
+
+    img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &:first-child {
+        display: inline-flex;
+    }
+
+
+    p {
+        margin: 1rem;
+    }
+}
+
+.postHeader {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+
+    a {
+        align-items: center;
+        color: $color_5;
+        text-decoration: none;
+        vertical-align: middle;
+
+        &:hover {
+            filter: brightness(0.5);
+            transition: 0.5s;
+        }
+    }
+
+    #pfp {
+        height: 100%;
+        width: inherit;
+        padding: 0.5rem 0.5rem;
+        margin: 0 0 0 0.5rem;
+        border-radius: 90px;
+    }
+}
+
+.postFooter {
+    display: flex;
+
+    i {
+        height: 1rem;
+        margin: 1rem;
+
+        &:hover {
+            filter: brightness(0.5);
+            cursor: pointer;
+        }
+    }
+
+
+    p {
+        filter: brightness(0.5);
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
+#commentSection {
+    display: inline;
+
+    img {
+        height: 32px;
+        width: 32px;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin: 1rem;
+    }
+
+    .commentPost {
+        margin: 1rem;
+        padding: 0.5rem;
+        background-color: #222;
+        border-radius: 5px;
+
+        a {
+            margin-left: 1rem;
+            color: $color_5;
+            text-decoration: none;
+        }
+    }
+}

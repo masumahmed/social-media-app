@@ -35,7 +35,6 @@
 .waveWrapper {
   width: inherit;
   height: 100vh;
-  background-image: url("../../../public/wave.svg") !important;
   background-repeat: no-repeat !important;
   background-size: fit !important;
 }
@@ -78,10 +77,8 @@ form .login:hover {
 }
 form a {
   text-decoration: none;
-  text-align: center;
   font-size: 1rem;
-  padding-top: 0.8rem;
-  color: #333;
+  color: #fff;
 }
 form hr {
   background: #f7f7f7;
@@ -95,6 +92,7 @@ form .create-account {
   border-radius: 0.4rem;
   font-size: 1.1rem;
   color: #fff;
+  text-align: center;
 }
 form .create-account:hover {
   filter: brightness(0.7);

@@ -1,1 +1,72 @@
-/*# sourceMappingURL=Profile.css.map */
+#profile2 {
+  background-color: #333;
+  background: linear-gradient(#333, #222);
+  border-top: 1px solid #444;
+}
+#profile2 #bannerImg {
+  max-height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 50rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+#subheader {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 50rem;
+  display: flex;
+  margin: 0 auto;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#subheader #pfp {
+  height: 13rem;
+  margin: 0 0 0 5rem;
+  border-radius: 1000px;
+  border: 10px solid #333;
+  position: relative;
+  top: -70px;
+}
+#subheader #meta {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 4rem;
+}
+
+#filterChips {
+  min-width: 50rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+}
+#filterChips .filterChip {
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+}
+#filterChips .filterChip:nth-child(1) {
+  margin-left: 0;
+}
+#filterChips .filterChip:nth-child(4) {
+  position: relative;
+  left: 21rem;
+}
+#filterChips .filterChip:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}/*# sourceMappingURL=Profile.css.map */

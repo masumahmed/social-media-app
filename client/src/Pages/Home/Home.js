@@ -1,5 +1,6 @@
-import './Home.css';
 import Header from '../../Components/Header/Header.js';
+import Posts from '../../Components/Posts/Posts.js';
+import './Home.css';
 
 export default function Home() {
     if (!document.cookie.includes('LoggedIn=1')) {
@@ -8,5 +9,6 @@ export default function Home() {
 
     return <div>
         <Header />
+        <Posts />
     </div>
 }
