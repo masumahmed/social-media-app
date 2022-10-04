@@ -28,10 +28,9 @@ export default function Posts() {
         </div>
 
         <div className="postFooter">
-            <buttom><i className="fas fa-thumbs-up"></i></buttom>
+            <buttom><i id="thumbsUp" className="fas fa-thumbs-up"></i></buttom>
             <buttom><i className="fas fa-thumbs-down"></i></buttom>
             <buttom><i className="fas fa-comments"></i></buttom>
-
             <p>Time Stamp</p>
         </div>
     </div>

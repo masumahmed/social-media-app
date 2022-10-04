@@ -48,6 +48,9 @@
 .postFooter {
   display: flex;
 }
+.postFooter #thumbsUp {
+  margin-left: 1.5rem;
+}
 .postFooter i {
   height: 1rem;
   margin: 1rem;
@@ -59,7 +62,7 @@
 .postFooter p {
   filter: brightness(0.5);
   margin-left: auto;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 #commentSection {
