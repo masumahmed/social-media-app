@@ -20,6 +20,13 @@ nav {
         display: flex;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 
+        span {
+            display: inline-flex;
+            justify-content: center;
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+
         li {
             padding: 3px;
 
@@ -46,6 +53,7 @@ nav {
                 justify-content: center;
                 align-items: center;
                 font-size: 2rem;
+                margin-right: 12rem;
             }
 
             .btn {
@@ -68,6 +76,7 @@ nav {
                     background: rgba(0, 0, 0, 0.138);
                     color: $color_4;
                     border-radius: 5px;
+                    justify-content: space-around;
                 }
             }
         }

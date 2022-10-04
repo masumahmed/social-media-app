@@ -14,6 +14,12 @@ nav ul {
   display: flex;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
+nav ul span {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 0 0 0;
+  width: 100%;
+}
 nav ul li {
   padding: 3px;
 }
@@ -39,6 +45,7 @@ nav ul li #logo {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  margin-right: 12rem;
 }
 nav ul li .btn {
   height: 40px;
@@ -58,6 +65,7 @@ nav ul li:hover .sqbtn {
   background: rgba(0, 0, 0, 0.138);
   color: #fff;
   border-radius: 5px;
+  justify-content: space-around;
 }
 nav ul li#space1 {
   flex: 1;

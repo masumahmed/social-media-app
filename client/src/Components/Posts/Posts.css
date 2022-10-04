@@ -31,6 +31,7 @@
   color: #d63f3f;
   text-decoration: none;
   vertical-align: middle;
+  margin-left: 0.5rem;
 }
 .postHeader a:hover {
   filter: brightness(0.5);
@@ -74,13 +75,40 @@
   margin: 1rem;
 }
 #commentSection .commentPost {
-  margin: 1rem;
+  margin: 1rem 1rem 0 1rem;
   padding: 0.5rem;
   background-color: #222;
   border-radius: 5px;
+}
+#commentSection .commentPost #pfpComments {
+  display: inline;
+  border-radius: 90px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+#commentSection .commentPost p {
+  margin-top: 0.5rem;
+}
+#commentSection .commentPost span {
+  display: inline;
+  vertical-align: middle;
 }
 #commentSection .commentPost a {
   margin-left: 1rem;
   color: #d63f3f;
   text-decoration: none;
+  position: relative;
+  top: -8px;
+}
+#commentSection .commentPost a:hover {
+  filter: brightness(0.5);
+  transition: 0.5s;
+}
+
+.invisible {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible > * {
+  display: none;
 }/*# sourceMappingURL=Posts.css.map */

@@ -24,7 +24,6 @@ export default function Profile() {
                 </div>
             </div>
         </div>
-
         <div id="filterChips">
             <button className="filterChip">All</button>
             <button className="filterChip"><i className="fa-solid fa-photo-film"></i> &nbsp;Media</button>

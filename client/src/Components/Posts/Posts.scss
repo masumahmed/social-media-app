@@ -42,6 +42,7 @@ sans-serif;
         color: $color_5;
         text-decoration: none;
         vertical-align: middle;
+        margin-left: 0.5rem;
 
         &:hover {
             filter: brightness(0.5);
@@ -93,15 +94,47 @@ sans-serif;
     }
 
     .commentPost {
-        margin: 1rem;
+        margin: 1rem 1rem 0 1rem;
         padding: 0.5rem;
         background-color: #222;
         border-radius: 5px;
+
+        #pfpComments {
+            display: inline;
+            border-radius: 90px;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+
+        span {
+            display: inline;
+            vertical-align: middle;
+        }
 
         a {
             margin-left: 1rem;
             color: $color_5;
             text-decoration: none;
+            position: relative;
+            top: -8px;
+
+            &:hover {
+                filter: brightness(0.5);
+                transition: 0.5s;
+            }
         }
+    }
+}
+
+.invisible {
+    display: none !important;
+    visibility: hidden !important;
+
+    >* {
+        display: none;
     }
 }

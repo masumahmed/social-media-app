@@ -16,12 +16,11 @@ export default function Posts() {
         {/* <hr /> */}
         <img src="https://via.placeholder.com/1000"></img>
 
-        <div id="commentSection">
+        <div id="commentSection" className="">
             <h3>Comments</h3>
             <div className="commentPost">
                 <span>
-                    {/* <img id="pfp" src="https://via.placeholder.com/32" /> */}
-                    <br />
+                    <img id="pfpComments" src="https://via.placeholder.com/32" />
                     <Link to="#">Display Name</Link>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr.</p>
                 </span>
