@@ -13,7 +13,6 @@ export default function Posts() {
         <hr />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr.</p>
 
-        {/* <hr /> */}
         <img src="https://via.placeholder.com/1000"></img>
 
         <div id="commentSection" className="">
