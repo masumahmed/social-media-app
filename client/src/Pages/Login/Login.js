@@ -1,6 +1,18 @@
 import './Login.css'
 import { Link } from 'react-router-dom'
 
+const submitForm = async () => {
+    const email = document.querySelector("#email").value;
+    const password = document.querySelector("#password").value;
+
+    const response = await fetch(`/api/user/${email}`, {
+        method: 'GET'
+    });
+
+    let res = await response;
+    console.log(res);
+}
+
 export default function Login() {
     document.getElementsByTagName('body').classList += 'wave';
 
@@ -19,22 +31,22 @@ export default function Login() {
             <use className="wave2" x="-100%" href="#sineWave" />
         </svg>
 
-        <div class="content">
-            <div class="flex-div">
-                <div class="name-content">
-                    <h1 class="logo">SocialMediaApp</h1>
+        <div className="content">
+            <div className="flex-div">
+                <div className="name-content">
+                    <h1 className="logo">SocialMediaApp</h1>
                     <p>Connect with friends and the world around you on social media.</p>
                 </div>
                 <form>
                     <h1>Welcome</h1>
                     <br></br>
-                    <input type="text" placeholder="Email or Phone Number" required />
-                    <input type="password" placeholder="Password" required />
-                    <button class="login">Log In</button>
+                    <input id="email" value="masuma23" type="text" placeholder="Email or Phone Number" required />
+                    <input id="password" type="password" placeholder="Password" required />
+                    <button onClick={submitForm} className="login">Log In</button>
                     <br></br>
-                    <Link href="#" class="">Forgot Password?</Link>
+                    <Link href="#" className="">Forgot Password?</Link>
                     <hr></hr>
-                    <Link to='#' class="create-account">Create Account</Link>
+                    <Link to='#' className="create-account">Create Account</Link>
                 </ form>
             </div>
         </div>

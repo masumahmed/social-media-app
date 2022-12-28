@@ -1,33 +1,50 @@
-CREATE TABLE "user_accounts" (
-  "user_id" serial NOT NULL,
-  "user_name" varchar(25) NOT NULL,
-  "email" varchar(50) NOT NULL,
-  "phone_number" int,
-  "first_name" varchar(20) NOT NULL,
-  "last_name" varchar(20),
-  "gender" varchar(1),
-  "password" varchar(50) NOT NULL,
-  PRIMARY KEY ("user_id")
+BEGIN;
+
+CREATE TABLE users (
+  ID INTEGER PRIMARY KEY,
+  Email VARCHAR(255) NOT NULL,
+  Password VARCHAR(255) NOT NULL,
+  Name VARCHAR(255) NOT NULL,
+  ProfilePicture VARCHAR(255),
+  DateOfBirth DATE,
+  Gender CHAR(1),
+  Bio TEXT,
+  Location VARCHAR(255)
 );
 
-CREATE TABLE "Posts" (
-  "user_id" int NOT NULL,
-  "text_area" varchar(300),
-  "posts_photo_id" int NOT NULL,
-  "time" time NOT NULL,
-  PRIMARY KEY ("user_id"),
-  CONSTRAINT "FK_Posts.user_id"
-    FOREIGN KEY ("user_id")
-      REFERENCES "user_account"("user_id")
+CREATE TABLE posts (
+  ID INTEGER PRIMARY KEY,
+  UserID INTEGER NOT NULL,
+  Content TEXT NOT NULL,
+  Image VARCHAR(255),
+  Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (UserID) REFERENCES Users(ID)
 );
 
-CREATE TABLE "Photos" (
-  "posts_photo_id" int NOT NULL,
-  "cdn_path_location" string NOT NULL,
-  "private" bool NOT NULL,
-  PRIMARY KEY ("posts_photo_id"),
-  CONSTRAINT "FK_Photos.posts_photo_id"
-    FOREIGN KEY ("posts_photo_id")
-      REFERENCES "Posts"("posts_photo_id")
+CREATE TABLE comments (
+  ID INTEGER PRIMARY KEY,
+  UserID INTEGER NOT NULL,
+  PostID INTEGER NOT NULL,
+  Content TEXT NOT NULL,
+  Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (UserID) REFERENCES Users(ID),
+  FOREIGN KEY (PostID) REFERENCES Posts(ID)
 );
 
+CREATE TABLE likes (
+  ID INTEGER PRIMARY KEY,
+  UserID INTEGER NOT NULL,
+  PostID INTEGER NOT NULL,
+  FOREIGN KEY (UserID) REFERENCES Users(ID),
+  FOREIGN KEY (PostID) REFERENCES Posts(ID)
+);
+
+CREATE TABLE followers (
+  ID INTEGER PRIMARY KEY,
+  UserID INTEGER NOT NULL,
+  FollowerID INTEGER NOT NULL,
+  FOREIGN KEY (UserID) REFERENCES Users(ID),
+  FOREIGN KEY (FollowerID) REFERENCES Users(ID)
+);
+
+COMMIT;

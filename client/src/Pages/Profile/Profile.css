@@ -41,8 +41,21 @@
   margin-left: 4rem;
 }
 
+@media only screen and (max-width: 550px) {
+  #subheader {
+    display: block;
+  }
+  #subheader #pfp {
+    margin: 0 auto;
+    display: flex;
+  }
+  #subheader #meta {
+    padding: 0 0 3rem 0;
+    margin: 0;
+    text-align: center;
+  }
+}
 #filterChips {
-  min-width: 50rem;
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 1rem;
@@ -52,17 +65,13 @@
 }
 #filterChips .filterChip {
   display: inline-flex;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border: 1px solid white;
   border-radius: 20px;
   margin: 0 0.5rem;
 }
 #filterChips .filterChip:nth-child(1) {
   margin-left: 0;
-}
-#filterChips .filterChip:nth-child(4) {
-  position: relative;
-  left: 21rem;
 }
 #filterChips .filterChip:hover {
   background-color: #333;

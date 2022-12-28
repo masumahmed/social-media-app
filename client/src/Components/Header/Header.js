@@ -6,7 +6,7 @@ function Header() {
         <header className="topnav">
             <nav>
                 <ul>
-                    <li> <Link to="/" id="logo"> <i className="fa-solid fa-ghost"></i> </ Link> </li>
+                    <li> <Link to="/" id="logo"> <i className="fa-solid fa-lemon"></i> </ Link> </li>
                     {/* <li id="space2"></li> */}
                     <span>
                         <li> <Link id='home' className="sqbtn tooltip" data-tooltip="Home" to="/"> <i className="fas fa-home"></i> </ Link> </li>
