@@ -164,6 +164,9 @@ form .create-account:hover {
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
   .name-content {
     margin: 0;
     text-align: center;
